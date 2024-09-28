@@ -1,0 +1,46 @@
+.reclamation-container {
+    padding: 10px;
+}
+
+.reclamation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between cards */
+}
+
+.reclamation-card {
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.2s; /* Animation effect on hover */
+}
+
+.reclamation-card:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.reclamation-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded image corners */
+}
+.accept-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.accept-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.accept-button:disabled {
+    background-color: #ccc; /* Gray background when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+}
